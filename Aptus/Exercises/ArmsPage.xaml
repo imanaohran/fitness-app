@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Exercises.ArmsPage"
+             Title="ArmsPage"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout>
+
+            <Label
+                Text="ARMS EXERCISES"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame 
+                    Margin="20,40,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="barbellcurls.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Barbell curls"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall amazing biceps builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                            Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapBarbellCurls"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="dumbellcurls.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Dumbell curls"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good biceps builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapDumbellCurls"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="ezbarcurls.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Easy Bar Curls"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good biceps builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEzBarCurls"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="forearmcurls.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Forearm Curls"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good arm builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapForearmCurls"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="hammercurls.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Hammer Curls"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good biceps builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapHammerCurls"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="skullcrushers.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        TranslationY="0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Skull crushers"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall amazing triceps builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapSkullCrushers"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="tricepspushdown.png"
+                        Scale="1.3"
+                        Margin="20,0,0,0"
+                        TranslationY="0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Triceps Pushdown"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall amazing triceps builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapTricepsPushDown"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <StackLayout.Background>
+                <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+                    <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                    <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                </LinearGradientBrush>
+            </StackLayout.Background>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

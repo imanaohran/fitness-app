@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.FemaleBodyParts"
+             Title="FemaleBodyParts"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout>
+
+
+            <StackLayout>
+                <Frame
+                BackgroundColor="#AAFFFFFF"
+                CornerRadius="0"
+                HeightRequest="90"
+                >
+                    <Image
+                    Source="logotextpng.png"
+                    Scale="1">
+                    </Image>
+                </Frame>
+            </StackLayout>
+
+            <Label
+                Text="Hi,   Aptus User"
+                FontFamily="ArialRoundedMTBold"
+                TextColor="#364B51"
+                Margin="30,20,0,-20"
+                FontSize="16"></Label>
+            <Label
+                Text="Let's Strat Training"
+                FontFamily="ArialRoundedMTBold"
+                TextColor="#364B51"
+                Margin="30,20,0,10"
+                FontSize="22"></Label>
+
+
+            <!--<Label
+                Text="TARGET"
+                FontSize="30"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+            
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+                
+            </StackLayout>-->
+
+            <Frame 
+            Margin="20,40,20,20"
+            HeightRequest="180"
+            CornerRadius="35"
+            BackgroundColor="#AAFFFFFF">
+                <HorizontalStackLayout
+                    Padding="10,5,0,5">
+                    <Frame
+                        CornerRadius="30"
+                        HeightRequest="130"
+                        WidthRequest="120"
+                        BorderColor="#A9B3B9"
+                        >
+                        <Image
+                        Source="femaleglutes.png"
+                        Scale="4"
+                        Margin="20,0,0,0"
+                        TranslationY="20"
+                        TranslationX="-15"
+                        Opacity="1"
+                        ></Image>
+                    </Frame>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="GLUTES"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="25"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-20,20,0,0"></Label>
+                        <Label
+                        Text="Selected glutes"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-10,6,0,0"></Label>
+                        <Label
+                        Text="exercises for great"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="20,0,0,0"></Label>
+                        <Label
+                        Text="looking glutes"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-15,0,0,0"></Label>
+                    </VerticalStackLayout>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGlutes"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame 
+            Margin="20,0,20,20"
+            HeightRequest="180"
+            CornerRadius="35"
+            BackgroundColor="#AAFFFFFF">
+                <HorizontalStackLayout
+                    Padding="10,5,0,5">
+                    <Frame
+                        CornerRadius="30"
+                        HeightRequest="130"
+                        WidthRequest="120"
+                        BorderColor="#A9B3B9"
+                        >
+                        <Image
+                        Source="femaleback.png"
+                        Scale="4"
+                        Margin="20,0,0,0"
+                        TranslationY="86"
+                        TranslationX="-15"
+                        Opacity="1"
+                        ></Image>
+                    </Frame>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="BACK"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="25"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-40,20,0,0"></Label>
+                        <Label
+                        Text="Selected back"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-10,6,0,0"></Label>
+                        <Label
+                        Text="exercises for great"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="20,0,0,0"></Label>
+                        <Label
+                        Text="looking back"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-15,0,0,0"></Label>
+                    </VerticalStackLayout>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapBack"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+            Margin="20,0,20,20"
+            HeightRequest="180"
+            CornerRadius="35"
+            BackgroundColor="#AAFFFFFF">
+                <HorizontalStackLayout
+                    Padding="10,5,0,5">
+                    <Frame
+                        CornerRadius="30"
+                        HeightRequest="130"
+                        WidthRequest="120"
+                        BorderColor="#A9B3B9"
+                        >
+                        <Image
+                        Source="femalequads.png"
+                        Scale="3.5"
+                        Margin="20,0,0,0"
+                        TranslationY="-50"
+                        TranslationX="-13"
+                        Opacity="1"
+                        ></Image>
+                    </Frame>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="QUADS"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="25"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-25,20,0,0"></Label>
+                        <Label
+                        Text="Selected quads"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="0,6,0,0"></Label>
+                        <Label
+                        Text="exercises for great"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="20,0,0,0"></Label>
+                        <Label
+                        Text="looking legs"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-25,0,0,0"></Label>
+                    </VerticalStackLayout>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapQuads"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <Frame 
+            Margin="20,0,20,20"
+            HeightRequest="180"
+            CornerRadius="35"
+            BackgroundColor="#AAFFFFFF">
+                <HorizontalStackLayout
+                    Padding="10,5,0,5">
+                    <Frame
+                        CornerRadius="30"
+                        HeightRequest="130"
+                        WidthRequest="120"
+                        BorderColor="#A9B3B9"
+                        >
+                        <Image
+                        Source="femalehamstrings.png"
+                        Scale="4"
+                        Margin="20,0,0,0"
+                        TranslationY="-10"
+                        TranslationX="-15"
+                        Opacity="1"
+                        ></Image>
+                    </Frame>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="HAMSTRINGS"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="25"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="25,20,0,0"></Label>
+                        <Label
+                        Text="Selected shoulder"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-10,6,0,0"></Label>
+                        <Label
+                        Text="exercises for great"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-5,0,0,0"></Label>
+                        <Label
+                        Text="looking hamstrings"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-5,0,0,0"></Label>
+                    </VerticalStackLayout>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapHamstrings"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <Frame 
+            Margin="20,0,20,20"
+            HeightRequest="180"
+            CornerRadius="35"
+            BackgroundColor="#AAFFFFFF">
+                <HorizontalStackLayout
+                    Padding="10,5,0,5">
+                    <Frame
+                        CornerRadius="30"
+                        HeightRequest="130"
+                        WidthRequest="120"
+                        BorderColor="#A9B3B9"
+                        >
+                        <Image
+                        Source="femalearms.png"
+                        Scale="4"
+                        Margin="20,0,0,0"
+                        TranslationY="60"
+                        TranslationX="-13"
+                        Opacity="1"
+                        ></Image>
+                    </Frame>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="ARMS"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="25"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-35,20,0,0"></Label>
+                        <Label
+                        Text="Selected arms"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-10,6,0,0"></Label>
+                        <Label
+                        Text="exercises for great"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="20,0,0,0"></Label>
+                        <Label
+                        Text="looking arms"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Padding="-15,0,0,0"></Label>
+                    </VerticalStackLayout>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapArms"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+        </StackLayout>
+
+        <ScrollView.Background>
+            <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+                <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                <GradientStop Color="#5D6E76" Offset="1"></GradientStop>
+            </LinearGradientBrush>
+        </ScrollView.Background>
+    </ScrollView>
+</ContentPage>

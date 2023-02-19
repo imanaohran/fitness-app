@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.AboutUsPage"
+             Title="AboutUsPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <StackLayout>
+            <Frame
+                BackgroundColor="#AAFFFFFF"
+                CornerRadius="0"
+                HeightRequest="90"
+                >
+                <Image
+                    Source="logotextpng.png"
+                    Scale="1">
+                </Image>
+            </Frame>
+        </StackLayout>
+        <Label Text="A B O U T     U S"
+                   HorizontalOptions="CenterAndExpand"
+                   FontFamily="Inter"
+                   FontSize="20"
+                   TextColor="#364B51"
+                   Margin="0,50,0,50" />
+
+
+        <Frame
+            BackgroundColor="#AA5D6E76"
+            BorderColor="Transparent"
+            WidthRequest="300"
+            HeightRequest="600"
+            CornerRadius="5">
+            <Label
+                TextColor="White"
+                FontSize="14"
+                Padding="10,0,10,0"
+                Text="Aptus is an easily accesible mobile app for everyone that is willing to improve on themselves, whether they are male or female, no matter the day and age. Aptus provides a simple way of explaining each exercise that you need to know to be able to get your phisical abilities and mental health to the next level, to improve in the sence of being able to understand the basics of training and getting closer to making your own plan. The primary thing that we focus on is improving the way that you understand beeing functional">
+  
+            </Label>
+            
+        </Frame>
+        
+
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+                <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                <GradientStop Color="#5D6E76" Offset="1"></GradientStop>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+    </StackLayout>
+</ContentPage>

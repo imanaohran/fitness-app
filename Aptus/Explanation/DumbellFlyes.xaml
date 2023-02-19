@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Explanation.DumbellFlyes"
+             Title="DumbellFlyes"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout Margin="0,0,0,0" BackgroundColor="#A9B3B9" >
+
+            <Label
+                Text="DUMBELL FLYES"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+                CornerRadius="30"
+                WidthRequest="300"
+                Margin="0,20,0,0"
+                BorderColor="Transparent">
+                <Image
+            Source="seateddumbellfly.pmg"></Image>
+            </Frame>
+
+            <Label
+                Text="HOW TO PERFORM"
+                FontSize="20"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+            <StackLayout
+            BackgroundColor="White"
+            WidthRequest="300"
+            HeightRequest="1"
+            Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+            CornerRadius="30"
+            WidthRequest="300"
+            Margin="0,20,0,0"
+            BorderColor="Transparent"
+            Padding="20"
+            BackgroundColor="White"
+            Opacity="0.8">
+                <Label
+        Text="Lie back on the bench, then press the dumbbells up above your chest with a neutral grip.
+
+●Drive your shoulder blades back into the bench to set your shoulders. Keep your feet on the ground and squeeze your glutes and abs to create full-body tension.
+
+●Move your hands to turn your pinkies toward each other. This will help to create some external rotation at the shoulder joints.
+
+●Bend your elbows slightly, then lower the weights down to the sides, moving only at the shoulders. Lower down only to a comfortable point for your range of motion, when you feel a stretch on your chest.
+
+●Squeeze your pecs to raise the weights back up to the starting position. Don't slam the weights together at the top—instead, stop with the weights just slightly apart, continuing to squeeze the chest.
+
+●Perform 3 sets of 10 to 12 reps"
+FontSize="15"
+FontFamily="Arial"
+TextColor="#252525"
+Padding="10,10,10,10"></Label>
+            </Frame>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

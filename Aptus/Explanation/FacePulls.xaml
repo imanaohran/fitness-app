@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Explanation.FacePulls"
+             Title="FacePulls">
+    <ScrollView>
+        <StackLayout Margin="0,0,0,0" BackgroundColor="#A9B3B9" >
+
+            <Label
+                Text="FACE PULLS"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+                CornerRadius="30"
+                WidthRequest="300"
+                Margin="0,20,0,0"
+                BorderColor="Transparent">
+                <Image
+            Source="facepulls.pmg"></Image>
+            </Frame>
+
+            <Label
+                Text="HOW TO PERFORM"
+                FontSize="20"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+            <StackLayout
+            BackgroundColor="White"
+            WidthRequest="300"
+            HeightRequest="1"
+            Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+            CornerRadius="30"
+            WidthRequest="300"
+            Margin="0,20,0,0"
+            BorderColor="Transparent"
+            Padding="20"
+            BackgroundColor="White"
+            Opacity="0.8">
+                <Label
+        Text="Reach up and grasp the handles with both hands with your palms facing in. Step back until your arms are fully extended, then engage your core and lean back slightly, positioning your body at a roughly 20-degree angle.
+Pull the rope toward you just enough to start lifting the weight from the stack, then engage your shoulders, rolling them back to create good posture—you don't want your shoulders hunching or rolling forward. This is your starting position.
+Pull the handles of the attachment straight toward your forehead. Keep your palms facing in as your elbows flare outward toward the sides, engaging the rear delts.
+Reverse the movement and slowly extend your arms without allowing your shoulders or chest to roll forward as you extend. You want to maintain good posture throughout the exercise."
+FontSize="15"
+FontFamily="Arial"
+TextColor="#252525"
+Padding="10,10,10,10"></Label>
+            </Frame>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

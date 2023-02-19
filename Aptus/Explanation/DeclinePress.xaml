@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Explanation.DeclinePress"
+             Title="DeclinePress"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout Margin="0,0,0,0" BackgroundColor="#A9B3B9" >
+
+            <Label
+                Text="DECLINE BENCH PRESS"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+                CornerRadius="30"
+                WidthRequest="300"
+                Margin="0,20,0,0"
+                BorderColor="Transparent">
+                <Image
+            Source="declinebench.pmg"></Image>
+            </Frame>
+
+            <Label
+                Text="HOW TO PERFORM"
+                FontSize="20"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+            <StackLayout
+            BackgroundColor="White"
+            WidthRequest="300"
+            HeightRequest="1"
+            Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+            CornerRadius="30"
+            WidthRequest="300"
+            Margin="0,20,0,0"
+            BorderColor="Transparent"
+            Padding="20"
+            BackgroundColor="White"
+            Opacity="0.8">
+                <Label
+        Text="Lie faceup on a decline bench with your feet anchored securely under the foot roller pads and your back in contact with the bench. Your eyes should be directly underneath the barbell. Maintain a neutral head and neck position. Your chin should remain tucked throughout the movement as if you were holding an egg under your chin.
+2. Engage your core and maintain a neutral spine. Your shoulder blades should be slightly down and back, and your upper back should remain tight and stable throughout the entire set.
+3. Grab the barbell with a wide grip that is slightly wider than your shoulders.
+4. Rotate your shoulders outward to engage your lats.
+5. Without losing your alignment, lift the barbell off of the uprights. Your wrist should be neutral and in line with your elbows.
+6. Slowly lower the barbell towards your lower chest by bending your elbows.
+7. Lower the barbell until your upper arms are in line with your back. Your elbows should be at a 45-degree angle.
+8. Pause for 1–2 seconds at the bottom position
+9. For the upward movement, squeeze your chest and begin to straighten your elbows.
+10. Squeeze your chest and triceps at the top of the movement while maintaining a slight bend in your elbows.
+11. Repeat this movement for the desired amount of repetitions."
+FontSize="15"
+FontFamily="Arial"
+TextColor="#252525"
+Padding="10,10,10,10"></Label>
+            </Frame>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

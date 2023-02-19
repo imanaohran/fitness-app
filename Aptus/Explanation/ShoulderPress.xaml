@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Explanation.ShoulderPress"
+             Title="ShoulderPress">
+    <ScrollView>
+        <StackLayout Margin="0,0,0,0" BackgroundColor="#A9B3B9" >
+
+            <Label
+                Text="SHOULDER PRESS"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+                CornerRadius="30"
+                WidthRequest="300"
+                Margin="0,20,0,0"
+                BorderColor="Transparent">
+                <Image
+            Source="shoulderpress.pmg"></Image>
+            </Frame>
+
+            <Label
+                Text="HOW TO PERFORM"
+                FontSize="20"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+            <StackLayout
+            BackgroundColor="White"
+            WidthRequest="300"
+            HeightRequest="1"
+            Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+            CornerRadius="30"
+            WidthRequest="300"
+            Margin="0,20,0,0"
+            BorderColor="Transparent"
+            Padding="20"
+            BackgroundColor="White"
+            Opacity="0.8">
+                <Label
+        Text="First, select your dumbbells. Don’t go overboard on the weight here, because this is an exercise that suddenly feels very tough halfway through a set. You almost want to feel like you’ve picked too light a weight for the first couple of reps. Opting for too heavy a weight can also mean you risk injury to your shoulders if your form gets sloppy as a result of the load.
+
+Hold the dumbbells by your shoulders with your palms facing forwards and your elbows out to the sides and bent at a 90° angle. Without leaning back, extend through your elbows to press the weights above your head. Then slowly return to the starting position."
+FontSize="15"
+FontFamily="Arial"
+TextColor="#252525"
+Padding="10,10,10,10"></Label>
+            </Frame>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

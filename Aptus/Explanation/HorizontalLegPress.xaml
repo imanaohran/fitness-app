@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Explanation.HorizontalLegPress"
+             Title="HorizontalLegPress">
+    <ScrollView>
+        <StackLayout Margin="0,0,0,0" BackgroundColor="#A9B3B9" >
+
+            <Label
+                Text="HORIZONTAL LEG PRESS"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+                CornerRadius="30"
+                WidthRequest="300"
+                Margin="0,20,0,0"
+                BorderColor="Transparent">
+                <Image
+            Source="horizontallegpress.pmg"></Image>
+            </Frame>
+
+            <Label
+                Text="HOW TO PERFORM"
+                FontSize="20"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+            <StackLayout
+            BackgroundColor="White"
+            WidthRequest="300"
+            HeightRequest="1"
+            Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+            CornerRadius="30"
+            WidthRequest="300"
+            Margin="0,20,0,0"
+            BorderColor="Transparent"
+            Padding="20"
+            BackgroundColor="White"
+            Opacity="0.8">
+                <Label
+        Text="Brace your abdominal muscles and push the platform away with your heels and forefoot. Your heels should remain flat on the footplate. The front of your foot or toes should never be used exclusively to move the pad forward.
+While exhaling, extend your legs and keep your head and back flat against the seat pad. Extend with slow control rather than with an explosive movement.
+Pause at the top of the movement. Do not lock out your knees, and ensure that they are not bowing out or in.
+While inhaling, return the footplate to the starting position by gradually bending the knees. Keep the feet and back flat throughout.
+If you have never done leg presses, start modestly with three sets of 10 leg presses. You can advance from there as you build strength."
+FontSize="15"
+FontFamily="Arial"
+TextColor="#252525"
+Padding="10,10,10,10"></Label>
+            </Frame>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

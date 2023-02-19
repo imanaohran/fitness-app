@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Explanation.OneArmShoulderPress"
+             Title="OneArmShoulderPress">
+    <ScrollView>
+        <StackLayout Margin="0,0,0,0" BackgroundColor="#A9B3B9" >
+
+            <Label
+                Text="ONE ARM SHOULDER PRESS"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+                CornerRadius="30"
+                WidthRequest="300"
+                Margin="0,20,0,0"
+                BorderColor="Transparent">
+                <Image
+            Source="onearmshoulderpress.pmg"></Image>
+            </Frame>
+
+            <Label
+                Text="HOW TO PERFORM"
+                FontSize="20"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+            <StackLayout
+            BackgroundColor="White"
+            WidthRequest="300"
+            HeightRequest="1"
+            Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+            CornerRadius="30"
+            WidthRequest="300"
+            Margin="0,20,0,0"
+            BorderColor="Transparent"
+            Padding="20"
+            BackgroundColor="White"
+            Opacity="0.8">
+                <Label
+        Text="Stand with your feet so they are hip to shoulder width apart, and have a slight bend in your knees.
+Make sure that your weight remains in the mid-back portion of your feet but keep your toes down, particularly your big and baby toes. This will improve your stability and strength, and ability to perform the exercise.
+Grab onto a dumbbell. Position the dumbbell so it is just above shoulder height, and your palms should be facing ahead.
+Before you press the dumbbell overhead, take a deep breath into your belly (360 degrees of air around the spine), brace your core (think about blocking a soccer ball with your stomach), gently tuck your rib cage towards your hips (close the space in your midsection), and squeeze your glutes. This will help keep your body stable and properly aligned.
+After you initiate the movement and the dumbbell begins to move to an overhead position, exhale, and press the dumbbell overhead by squeezing your delts and extending your elbow, not by shrugging your shoulders, hyperextending your lower back and flaring your rib cage.
+When you lock out at the top, your elbow should be fully extended, and your biceps should be close to your ears. Do not allow your shoulder to move up towards your ears. The weight should remain parallel to the floor and your palm should still be facing ahead.
+Lower the weight with control and return to the starting position.
+Reset and repeat.
+This is proper overhead press form.
+Do not cheat and use your lower body."
+FontSize="15"
+FontFamily="Arial"
+TextColor="#252525"
+Padding="10,10,10,10"></Label>
+            </Frame>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

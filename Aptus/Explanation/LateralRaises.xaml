@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Explanation.LateralRaises"
+             Title="LateralRaises">
+    <ScrollView>
+        <StackLayout Margin="0,0,0,0" BackgroundColor="#A9B3B9" >
+
+            <Label
+                Text="LATERAL RAISES"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+                CornerRadius="30"
+                WidthRequest="300"
+                Margin="0,20,0,0"
+                BorderColor="Transparent">
+                <Image
+            Source="lateralraises.pmg"></Image>
+            </Frame>
+
+            <Label
+                Text="HOW TO PERFORM"
+                FontSize="20"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+            <StackLayout
+            BackgroundColor="White"
+            WidthRequest="300"
+            HeightRequest="1"
+            Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+            CornerRadius="30"
+            WidthRequest="300"
+            Margin="0,20,0,0"
+            BorderColor="Transparent"
+            Padding="20"
+            BackgroundColor="White"
+            Opacity="0.8">
+                <Label
+        Text="1. Make a small move
+What Start each rep by slowly moving your hands out to the sides, then stopping.
+
+Why Moving the dumbbells slightly places tension on your shoulders. The pause switches off your traps, which will otherwise muscle in on the move, taking emphasis off your shoulders.
+
+How Stand tall holding a dumbbell in each hand. Lean forward from the hips then, keeping your chest up and a slight bend in your elbows, use your side delts to raise the weights about 5cm out to the side, then pause for one second.
+
+2. Lead with your elbows
+What Raise the dumbbells leading with your elbows, so that they’re the highest part of your arm.
+
+Why Ensuring your elbows lead the move will again keep the focus on your delts and minimise the stress placed on your rotator cuffs, a small group of delicate but crucial stabilising muscles.
+
+How From the paused position, re-initiate the move by raising your elbows up and out to the sides, maintaining that slight bend in the joint. Concentrate on how your side delts feel and contract as the weights are raised.
+
+3. Turn your wrists
+What As your hands approach shoulder height, rotate your wrist so that your little fingers are uppermost.
+
+Why Turning your wrists as the dumbbells reach the top of the move activates more muscle fibres in your side delts, meaning each rep works the muscle even harder.
+
+How Once your elbows are at shoulder height turn your wrists as if you were pouring two jugs of water so your little fingers are the highest parts of your hands. Reverse this movement as you lower the weights again.
+
+4. Go down slower
+What From the top of the move lower the weights back to the start as slowly as possible.
+
+Why Taking your time to lower the dumbbells forces your shoulders to work harder to manage the weight, so you recruit more muscle fibres in order to maintain control. The more muscular damage you do, the greater your growth return.
+
+How Keep tension on your side delts as you lower the weights under full control, maintaining focus on how your delts feel. Aim for a two-second lowering phase at first, then increase it over time.
+
+5. Raise and stop
+What? Make a strategic stop just before the top of the move.
+
+Why? Adding a pause is great for muscle enhancement.
+
+How? Before a set of lateral raises, hold the weights just below shoulder height for ten seconds, then do ten reps. Repeat three times… strict."
+FontSize="15"
+FontFamily="Arial"
+TextColor="#252525"
+Padding="10,10,10,10"></Label>
+            </Frame>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

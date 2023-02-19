@@ -1,0 +1,221 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Aptus"
+             x:Class="Aptus.FemaleProfilePage"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20" Orientation="Vertical">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,0,0,20">
+                    <Frame CornerRadius="200" WidthRequest="130" HeightRequest="130">
+                        <Image x:Name="ProfileImage"
+                           Source="defaultprofilepicture.png"
+                           WidthRequest="100"
+                           HeightRequest="100"
+                           Aspect="AspectFill"
+                           Scale="0.8"
+                           />
+                    </Frame>
+                    <StackLayout VerticalOptions="Center" Margin="20,50,0,0">
+                        <Label x:Name="UsernameLabel"
+                           Text="{Binding Username}"
+                           TextColor="White"
+                           FontSize="30"
+                           FontAttributes="Bold"/>
+                        <Label
+                           Text="Female"
+                           TextColor="White"
+                           Opacity="0.5"></Label>
+                        <Label x:Name="BioLabel"
+                           Text="{Binding Bio}"
+                           TextColor="White"
+                           FontSize="18"/>
+                        <Label x:Name="EmailLabel"
+                           Text="{Binding Email}"
+                           TextColor="White"
+                           FontSize="18"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,0,0,20">
+                    <VerticalStackLayout>
+                        <Entry x:Name="BioEntry" Placeholder="Enter your bio here" PlaceholderColor="White" Margin="10,0,20,0" TextColor="White"/>
+                    </VerticalStackLayout>
+                    <StackLayout Margin="0,10,35,20">
+                        <Button x:Name="SaveBioButton" Text="Save" HeightRequest="30" WidthRequest="50" BackgroundColor="#AA364B51" FontSize="7" TextColor="#BFC4C6" Clicked="SaveBioButton_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+
+
+
+                <HorizontalStackLayout>
+                    <Label Text="UPDATE YOUR BMI:"
+                HorizontalOptions="CenterAndExpand"
+               FontFamily="ArialRoundedMTBold"
+               FontSize="15"
+               TextColor="White"
+               Margin="100,20,0,50"/>
+                </HorizontalStackLayout>
+
+
+                <VerticalStackLayout>
+                    <HorizontalStackLayout
+                        HorizontalOptions="CenterAndExpand">
+                        <Label Text="HEIGHT:"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"
+               FontFamily="ArialRoundedMTBold"
+               FontSize="15"
+               TextColor="White"
+               Margin="0,0,0,0"/>
+
+                        <Slider x:Name="HeightSlider" 
+                   WidthRequest="200"
+                   HeightRequest="20"
+                   Minimum="130"
+                   Maximum="220"
+                   MinimumTrackColor="#364B51"
+                   MaximumTrackColor="#364B51"
+                   ThumbColor="White" 
+                   ValueChanged="OnValueChanged"
+                   />
+
+                        <Label x:Name="HeightLabel" 
+               Text="0 cm" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"
+               FontSize="15" 
+               TextColor="White"
+               Margin="0,0,0,0" 
+               FontFamily="ArialRoundedMTBold"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout
+                        
+                        HorizontalOptions="CenterAndExpand">
+                        <Label Text="WEIGHT:"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"
+               FontFamily="ArialRoundedMTBold"
+               FontSize="15"
+               TextColor="White"
+               Margin="0,0,0,0"/>
+
+                        <Slider x:Name="WeightSlider" 
+                   WidthRequest="200"
+                   HeightRequest="100"
+                   Minimum="35"
+                   Maximum="220"
+                   MinimumTrackColor="#364B51"
+                   MaximumTrackColor="#364B51"
+                   ThumbColor="White" 
+                   ValueChanged="OnValue2Changed"
+                   />
+
+                        <Label x:Name="WeightLabel" 
+               Text="0 cm" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"
+               FontSize="15" 
+               TextColor="White"
+               Margin="0,0,0,0" 
+               FontFamily="ArialRoundedMTBold"/>
+                    </HorizontalStackLayout>
+
+                    <VerticalStackLayout>
+                        <Label x:Name="BmiLabel" 
+               Text="YOUR BMI SCORE:"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" 
+               FontFamily="ArialRoundedMTBold"
+               FontAttributes="Bold"
+               FontSize="20"
+               TextColor="White"
+               Margin="0,0,0,10"/>
+
+                        <Label x:Name="BmiValueLabel" 
+               Text="0"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"
+               FontSize="35"
+               FontFamily="ArialRoundedMTBold"
+               TextColor="White"
+               Margin="0,0,0,10"             />
+
+                        <Label x:Name="ClassificationLabel" 
+               Text="Classification:"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" 
+               FontFamily="ArialRoundedMTBold"
+               TextColor="White"
+               Margin="0,0,0,150"/>
+
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+
+
+
+
+                <StackLayout>
+                    <Label  Text="CHANGE PASSWORD"
+                            TextColor="White"
+                            FontFamily="ArialRoundedMTBold"
+                            FontSize="15"
+                            Margin="0,0,0,20"
+                            HorizontalOptions="CenterAndExpand"/>
+                    <StackLayout>
+                        <StackLayout Margin="35,10,35,0">
+                            <Entry x:Name="OldPasswordEntry"
+                               Placeholder="Old Password"
+                               PlaceholderColor="White"
+                               Margin="20,0,20,0"
+                               TextColor="{x:StaticResource White}"/>
+                        </StackLayout>
+                        <StackLayout Margin="35,10,35,0">
+                            <Entry x:Name="NewPasswordEntry"
+                               Placeholder="New Password"
+                               IsPassword="True"
+                               PlaceholderColor="White"
+                               Margin="20,0,20,0"
+                               TextColor="{x:StaticResource White}"/>
+                        </StackLayout>
+                        <StackLayout Margin="35,10,35,0">
+                            <Entry x:Name="ConfirmPasswordEntry"
+                               Placeholder="Confirm Password"
+                               IsPassword="True"
+                               PlaceholderColor="White"
+                               Margin="20,0,20,0"
+                               TextColor="{x:StaticResource White}"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Margin="35,10,35,0">
+                        <Button x:Name="ChangePasswordButton"
+                            Text="Change Password"
+                            HeightRequest="40"
+                            WidthRequest="255"
+                            CornerRadius="20"
+                            BackgroundColor="#AA364B51"
+                            TextColor="#BFC4C6"
+                            FontFamily="Arial"
+                            Clicked="ChangePasswordButton_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+
+        <ScrollView.Background>
+            <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+                <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                <GradientStop Color="#5D6E76" Offset="1"></GradientStop>
+            </LinearGradientBrush>
+        </ScrollView.Background>
+
+    </ScrollView>
+</ContentPage>
+
+
+
+
+
+
+

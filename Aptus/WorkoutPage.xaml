@@ -1,0 +1,32 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.WorkoutPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#AA364B51">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20" Orientation="Vertical">
+            <StackLayout>
+                <Label Text="MY WORKOUT"
+                   HorizontalOptions="CenterAndExpand"
+                   FontFamily="ArialRoundedMTBold"
+                   FontSize="20"
+                   TextColor="White"
+                   Margin="0,50,0,50" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="0,0,0,20">
+                    <Entry x:Name="MuscleGroupEntry" Placeholder="Muscle Group"  TextColor="White" FontSize="12" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Entry x:Name="ExerciseNameEntry" Placeholder="Exercise"  TextColor="White" FontSize="12"/>
+                    <Entry x:Name="SetsEntry" Placeholder="Sets"  TextColor="White" Keyboard="Numeric"  FontSize="12"/>
+                    <Entry x:Name="RepsEntry" Placeholder="Reps"  TextColor="White" Keyboard="Numeric" FontSize="12"/>
+                    <Entry x:Name="WeightEntry" Placeholder="Weight"  TextColor="White" Keyboard="Numeric" FontSize="12"/>
+                </StackLayout>
+                <Button x:Name="AddExerciseButton" Text="ADD" HeightRequest="30" WidthRequest="50" BackgroundColor="#AA364B51" FontSize="7" TextColor="#BFC4C6" Clicked="AddExerciseButton_Clicked" 
+                        Margin="0,0,0,20" />
+                <StackLayout x:Name="ExerciseStackLayout" Orientation="Vertical">
+                    <!-- Exercises will be added here -->
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

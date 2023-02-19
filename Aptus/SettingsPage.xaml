@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.SettingsPage"
+             Title="SettingsPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+
+        <StackLayout>
+            <Frame
+                BackgroundColor="#AAFFFFFF"
+                CornerRadius="0"
+                HeightRequest="90"
+                >
+                <Image
+                    Source="logotextpng.png"
+                    Scale="1">
+                </Image>
+            </Frame>
+        </StackLayout>
+
+
+
+        <Label Text="SETTINGS"
+                   HorizontalOptions="CenterAndExpand"
+                   FontFamily="ArialRoundedMTBold"
+                   FontSize="20"
+                   TextColor="White"
+                   Margin="0,50,0,50" />
+
+        <VerticalStackLayout>
+            <StackLayout
+                BackgroundColor="#AAFFFFFF"
+                HeightRequest="1"></StackLayout>
+            <Button Text="Profile Page"
+                    CornerRadius="0"
+                    HeightRequest="60"
+                    BackgroundColor="Transparent"
+                    Clicked="OnProfilePageClicked">
+            </Button>
+
+            <StackLayout
+                BackgroundColor="#AAFFFFFF"
+                HeightRequest="1"></StackLayout>
+            <Button Text="Workout Page"
+                    CornerRadius="0"
+                    HeightRequest="60"
+                    BackgroundColor="Transparent"
+                    Clicked="OnWorkoutPageClicked">
+            </Button>
+            <StackLayout
+                BackgroundColor="#AAFFFFFF"
+                HeightRequest="1"></StackLayout>
+            <Button Text="Carousel Page"
+                    CornerRadius="0"
+                    HeightRequest="60"
+                    BackgroundColor="Transparent"
+                    Clicked="OnCarouselPageClicked">
+            </Button>
+            <StackLayout
+                BackgroundColor="#AAFFFFFF"
+                HeightRequest="1"></StackLayout>
+            <Button Text="Home Page"
+                    CornerRadius="0"
+                    HeightRequest="60"
+                    BackgroundColor="Transparent"
+                    Clicked="OnHomePageClicked">
+            </Button>
+            <StackLayout
+                BackgroundColor="#AAFFFFFF"
+                HeightRequest="1"></StackLayout>
+            <Button Text="Change Password"
+                    CornerRadius="0"
+                    HeightRequest="60"
+                    BackgroundColor="Transparent"
+                    Clicked="OnChangePasswordClicked">
+            </Button>
+            <StackLayout
+                BackgroundColor="#AAFFFFFF"
+                HeightRequest="1"></StackLayout>
+            <Button Text="About Us"
+                    CornerRadius="0"
+                    HeightRequest="60"
+                    BackgroundColor="Transparent"
+                    Clicked="OnAboutUsClicked">
+            </Button>
+            <StackLayout
+                BackgroundColor="#AAFFFFFF"
+                HeightRequest="1"></StackLayout>
+            <Button Text="Log Out"
+                    CornerRadius="0"
+                    HeightRequest="60"
+                    BackgroundColor="Transparent"
+                    Clicked="OnLogOutClicked">
+            </Button>
+            <StackLayout
+                BackgroundColor="#AAFFFFFF"
+                HeightRequest="1"></StackLayout>
+
+        </VerticalStackLayout>
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+                <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                <GradientStop Color="#5D6E76" Offset="1"></GradientStop>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+    </StackLayout>
+</ContentPage>

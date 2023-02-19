@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Aptus.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Aptus"
+    xmlns:views="clr-namespace:Aptus">
+
+    <ShellContent
+        Title="MaleFrontPage"
+        ContentTemplate="{DataTemplate local:MaleFrontPage}"
+        Route="MaleFrontPage" />
+
+    <ShellContent
+        Title="RegisterPage"
+        ContentTemplate="{DataTemplate local:RegisterPage}"
+        Route="RegisterPage" />
+
+    <ShellContent
+        Title="LoginPage"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage" />
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="GenderPage"
+        ContentTemplate="{DataTemplate local:GenderPage}"
+        Route="GenderPage" />
+
+    <ShellContent
+        Title="BMIHeightPage"
+        ContentTemplate="{DataTemplate local:BMIHeightPage}"
+        Route="BMIHeightPage" />
+
+
+
+</Shell>

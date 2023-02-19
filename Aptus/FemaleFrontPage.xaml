@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:Aptus.ViewModels"
+             xmlns:models="clr-namespace:Aptus.Models"
+             x:Class="Aptus.FemaleFrontPage"
+             x:DataType="viewModels:IntroScreenViewModel2"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <Grid Margin="0,20,0,20" RowDefinitions="*,Auto">
+
+        <Label 
+            Text="  POSSIBLE MUSCLE 
+                                                                        GROUPS TO TARGET"
+            TextColor="White"
+            FontFamily="ArialRoundedMTBold"
+            FontSize="20"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            Padding="85,90,0,0">
+        </Label>
+
+
+        <CarouselView Grid.Row="0" 
+                      Position="{Binding Position}"
+                      IndicatorView="indicatorView" 
+                      Loop="True"
+                      HorizontalOptions="FillAndExpand" 
+                      VerticalOptions="Start" 
+                      ItemsSource="{Binding IntroScreens2}"
+                      Margin="0,130,0,0">
+
+
+            <CarouselView.ItemTemplate>
+                <DataTemplate x:DataType="models:IntroScreenModels2">
+                    <Grid RowDefinitions="700*, 0*">
+
+                        <Frame
+                               CornerRadius="80"
+                               WidthRequest="300"
+                               HeightRequest="350"
+                               Background="Transparent"
+                               BorderColor="Transparent">
+
+                            <Image Source="{Binding IntroImage}" 
+                                   Aspect="AspectFit" 
+                                   Grid.Row="0" />
+                        </Frame>
+                        <VerticalStackLayout WidthRequest="320" 
+                                             Spacing="10" 
+                                             Grid.Row="1" 
+                                             Margin="20,0,20,20">
+                            <Label Text="{Binding IntroTitle}" 
+                                   Margin="0,20,0,0" 
+                                   FontSize="36" 
+                                   HorizontalTextAlignment="Center" 
+                                   HorizontalOptions="Center"
+                                   FontFamily="ArialRoundedMTBold"
+                                   FontAttributes="Bold" 
+                                   TextColor="White"/>
+
+                        </VerticalStackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <VerticalStackLayout  Grid.Row="1" 
+                              HorizontalOptions="Center" 
+                              VerticalOptions="Start">
+
+            <IndicatorView x:Name="indicatorView" 
+                           Margin="0,0,0,50"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           IndicatorSize="5"                          
+                           IndicatorColor="White"  
+                           SelectedIndicatorColor="#364B51" />
+            <Button 
+                TextColor="#BFC4C6" 
+                Text="NEXT"
+                FontAttributes="Bold"
+                FontSize="13"
+                HorizontalOptions="EndAndExpand"
+                Padding="0"
+                CornerRadius="20"
+                HeightRequest ="60" 
+                WidthRequest="295" 
+                BackgroundColor = "#364B51" 
+                Margin="0,0,0,70"
+                Clicked="OnNextButtonClicked"></Button>
+
+        </VerticalStackLayout>
+    </Grid>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+            <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+            <GradientStop Color="#5D6E76" Offset="1"></GradientStop>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+
+</ContentPage>
+

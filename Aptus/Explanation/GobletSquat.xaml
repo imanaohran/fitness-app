@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Explanation.GobletSquat"
+             Title="GobletSquat">
+    <ScrollView>
+        <StackLayout Margin="0,0,0,0" BackgroundColor="#A9B3B9" >
+
+            <Label
+                Text="GOBLET SQUAT"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+                CornerRadius="30"
+                WidthRequest="300"
+                Margin="0,20,0,0"
+                BorderColor="Transparent">
+                <Image
+            Source="gobletsquat.pmg"></Image>
+            </Frame>
+
+            <Label
+                Text="HOW TO PERFORM"
+                FontSize="20"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+            <StackLayout
+            BackgroundColor="White"
+            WidthRequest="300"
+            HeightRequest="1"
+            Opacity="0.5">
+            </StackLayout>
+
+            <Frame
+            CornerRadius="30"
+            WidthRequest="300"
+            Margin="0,20,0,0"
+            BorderColor="Transparent"
+            Padding="20"
+            BackgroundColor="White"
+            Opacity="0.8">
+                <Label
+        Text="Stand with your feet slightly wider than hip-distance apart, your toes angled slightly outward.
+Hold a kettlebell in both hands at your chest, gripping the handles as though you were cupping a goblet—one hand on either side of the handles. Bend your elbows, so the goblet is positioned right at the center of your chest.
+Warm up by using a lighter (or no) kettlebell to get a sense of the movement. Then, progress to a heavier weight for your full set.
+Engage your core and look straight ahead—you want to keep your back neutrally aligned and your eyes facing straight forward throughout the squat.
+Press your hips back and begin bending your knees to perform the squat. Inhale as you perform this downward phase.
+Keep the kettlebell close to your body during the movement.
+Focus on keeping your chest tall as you continue pressing your hips back and lowering down. The goal is to get your hips below parallel with your knees.
+Make sure your weight remains evenly distributed across your feet or slightly more weighted toward your heels—you shouldn't come up on your toes as you squat.
+Check your position at the bottom of the squat—your elbows should be positioned on the inside of either knee at the lowest point. This helps ensure that your knees remain aligned with your toes as you move into the deep squat position.
+Press through your heels and reverse the motion to return to the starting position. Exhale as you rise and press your hips forward at the top of the squat to engage your glutes more fully.
+Complete a full set and carefully rack the kettlebell. Always avoid dropping weights from a height. Repeat through as many sets as desired."
+FontSize="15"
+FontFamily="Arial"
+TextColor="#252525"
+Padding="10,10,10,10"></Label>
+            </Frame>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

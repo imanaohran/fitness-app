@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.BMIHeightPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+
+        <StackLayout Orientation ="Horizontal" 
+                     HorizontalOptions="Start" 
+                     Margin="0,80,0,0">
+            
+            <ImageButton Margin="45" 
+                     Padding="0,0,0,2" 
+                     Source="back.png" 
+                     WidthRequest="45" 
+                     HeightRequest="30" 
+                     Clicked="OnBackButtonClicked"></ImageButton>
+        
+        <Image Source="loading1.png" 
+               HorizontalOptions="Center" 
+               WidthRequest="120" 
+               HeightRequest="120"></Image>
+        </StackLayout>
+
+        <Label Text="HEIGHT"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"
+               FontFamily="ArialRoundedMTBold"
+               FontSize="25"
+               TextColor="White"
+               Margin="0,60,0,0"/>
+
+        <Slider x:Name="HeightSlider" 
+                   WidthRequest="250"
+                   HeightRequest="150"
+                   Minimum="128"
+                   Maximum="228"
+                   MinimumTrackColor="#364B51"
+                   MaximumTrackColor="#364B51"
+                   ThumbColor="White" 
+                   ValueChanged="OnValueChanged"
+                   />
+        
+        <Label x:Name="HeightLabel" 
+               Text="0 cm" 
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand"
+               FontSize="20" 
+               TextColor="White"
+               Margin="0,0,0,110" 
+               FontFamily="ArialRoundedMTBold"/>
+
+        <Button x:Name="NextButton" 
+                Text="NEXT" 
+                Clicked="OnNextButtonClicked" 
+                VerticalOptions="End" 
+                HorizontalOptions="CenterAndExpand"
+                CornerRadius="20" 
+                Margin="0,0,0,100" 
+                FontFamily="ArialRoundedMTBold" 
+                FontSize="13" 
+                HeightRequest="60" 
+                WidthRequest="300" 
+                BackgroundColor="#364B51" 
+                TextColor="#BFC4C6"/>
+
+            <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+                <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                <GradientStop Color="#5D6E76" Offset="1"></GradientStop>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+
+    </StackLayout>
+</ContentPage>

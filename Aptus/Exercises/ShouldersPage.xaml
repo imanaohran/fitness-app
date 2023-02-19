@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Exercises.ShouldersPage"
+             Title="ShouldersPage"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout>
+
+            <Label
+                Text="SHOULDER EXERCISES"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame 
+                    Margin="20,40,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="bentoverraises.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Bent over raises"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall amazing deltoid builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                            Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapBentOverRaises"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="chestsupportedlateralraises.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Chest supported raises"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good shoulder builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapChestSupportedLateralRaises"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="facepulls.png"
+                        Scale="1.3"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Face pulls"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good deltoid builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapFacePulls"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="lateralraises.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Lateral raises"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good shoulder builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapLateralRaises"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="onearmshoulderpress.png"
+                        Scale="1.2"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="One arm shoulder press"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good deltoid builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapOneArmShoulderPress"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="shoulderpress.png"
+                        Scale="1.3"
+                        Margin="20,0,0,0"
+                        TranslationY="0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Shoulder press"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall amazing shoulder builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapShoulderPress"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                
+                </HorizontalStackLayout>
+            </Frame>
+
+            <StackLayout.Background>
+                <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+                    <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                    <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                </LinearGradientBrush>
+            </StackLayout.Background>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,392 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>Aptus</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>Aptus</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.aptus</ApplicationId>
+		<ApplicationIdGuid>4a10f931-a788-4784-bce5-89eef00d2342</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+
+		<!-- Splash Screen -->
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\AppIcon\appicon.png" />
+	  <None Remove="Resources\Fonts\ArialRoundedMTBold.ttf" />
+	  <None Remove="Resources\Fonts\arlrdbd.ttf" />
+	  <None Remove="Resources\Images\back.png" />
+	  <None Remove="Resources\Images\barbellcurls.png" />
+	  <None Remove="Resources\Images\barbellhacksquat.png" />
+	  <None Remove="Resources\Images\benchpress.png" />
+	  <None Remove="Resources\Images\bentoverraises.png" />
+	  <None Remove="Resources\Images\buildmuscle.png" />
+	  <None Remove="Resources\Images\buildmuscleclicked.png" />
+	  <None Remove="Resources\Images\buildstrengt.png" />
+	  <None Remove="Resources\Images\builldstrenghtclicked.png" />
+	  <None Remove="Resources\Images\cablefly.png" />
+	  <None Remove="Resources\Images\cablerow.png" />
+	  <None Remove="Resources\Images\calvesraises.png" />
+	  <None Remove="Resources\Images\chestsupportedlateralraises.png" />
+	  <None Remove="Resources\Images\deadlift.png" />
+	  <None Remove="Resources\Images\declinebench.png" />
+	  <None Remove="Resources\Images\defaultprofilepicture.png" />
+	  <None Remove="Resources\Images\dumbellcurls.png" />
+	  <None Remove="Resources\Images\dumbellflies.png" />
+	  <None Remove="Resources\Images\dumbellpullover.png" />
+	  <None Remove="Resources\Images\dumbellromaniandeadlift.png" />
+	  <None Remove="Resources\Images\dumbellshrugs.png" />
+	  <None Remove="Resources\Images\ezbarcurls.png" />
+	  <None Remove="Resources\Images\facepulls.png" />
+	  <None Remove="Resources\Images\femalearms.png" />
+	  <None Remove="Resources\Images\femaleback.png" />
+	  <None Remove="Resources\Images\femaleclicked.png" />
+	  <None Remove="Resources\Images\femaleglutes.png" />
+	  <None Remove="Resources\Images\femalehamstrings.png" />
+	  <None Remove="Resources\Images\femalepng.png" />
+	  <None Remove="Resources\Images\femalequads.png" />
+	  <None Remove="Resources\Images\finallogo.png" />
+	  <None Remove="Resources\Images\forearmcurls.png" />
+	  <None Remove="Resources\Images\gobletsquat.png" />
+	  <None Remove="Resources\Images\hammercurls.png" />
+	  <None Remove="Resources\Images\hamstringcurls.png" />
+	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\horizontallegpress.png" />
+	  <None Remove="Resources\Images\inclinebenchpress.jpg" />
+	  <None Remove="Resources\Images\lateralraises.png" />
+	  <None Remove="Resources\Images\leglunges.png" />
+	  <None Remove="Resources\Images\legpress.png" />
+	  <None Remove="Resources\Images\loading1.png" />
+	  <None Remove="Resources\Images\loading2.png" />
+	  <None Remove="Resources\Images\loading3.png" />
+	  <None Remove="Resources\Images\loading4.png" />
+	  <None Remove="Resources\Images\loading5.png" />
+	  <None Remove="Resources\Images\logo.svg" />
+	  <None Remove="Resources\Images\logoalone.png" />
+	  <None Remove="Resources\Images\logotextpng.png" />
+	  <None Remove="Resources\Images\losefat.png" />
+	  <None Remove="Resources\Images\losefatclicked.png" />
+	  <None Remove="Resources\Images\malearms.png" />
+	  <None Remove="Resources\Images\maleback.png" />
+	  <None Remove="Resources\Images\malechest.png" />
+	  <None Remove="Resources\Images\maleclicked.png" />
+	  <None Remove="Resources\Images\malelegs.png" />
+	  <None Remove="Resources\Images\malepng.png" />
+	  <None Remove="Resources\Images\maleshoulders.png" />
+	  <None Remove="Resources\Images\menu.png" />
+	  <None Remove="Resources\Images\onearmshoulderpress.png" />
+	  <None Remove="Resources\Images\plus.png" />
+	  <None Remove="Resources\Images\profile.png" />
+	  <None Remove="Resources\Images\pullup.png" />
+	  <None Remove="Resources\Images\quadextensions.png" />
+	  <None Remove="Resources\Images\romaniandeadlift.png" />
+	  <None Remove="Resources\Images\search.png" />
+	  <None Remove="Resources\Images\seateddumbellfly.png" />
+	  <None Remove="Resources\Images\seatedlegcurl.png" />
+	  <None Remove="Resources\Images\settings.png" />
+	  <None Remove="Resources\Images\shoulderpress.png" />
+	  <None Remove="Resources\Images\shrugs.png" />
+	  <None Remove="Resources\Images\skullcrushers.png" />
+	  <None Remove="Resources\Images\smallcamera.png" />
+	  <None Remove="Resources\Images\squats.png" />
+	  <None Remove="Resources\Images\standingcablerow.png" />
+	  <None Remove="Resources\Images\sumodeadlift.png" />
+	  <None Remove="Resources\Images\tricepspushdown.png" />
+	  <None Remove="Resources\Splash\logotext.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiIcon Include="Resources\AppIcon\appicon.png" BaseSize="32,32" Color="E9EDF1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="SQLite-net-pcl" Version="1.8.116" />
+		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.4" />
+		<PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiSplashScreen Include="Resources\Splash\logotext.png" BaseSize="80,80" Color="E9EDF1" BackgroundColor="87070E" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="BMIHeightPage.xaml.cs">
+	    <DependentUpon>BMIHeightPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Exercises\ChestPage.xaml.cs">
+	    <DependentUpon>ChestPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Exercises\BackPage.xaml.cs">
+	    <DependentUpon>BackPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MaleFrontPage.xaml.cs">
+	    <DependentUpon>MaleFrontPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="LoginPage.xaml.cs">
+	    <DependentUpon>LoginPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="MainPage.xaml.cs">
+	    <DependentUpon>MainPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="GoalsPage.xaml.cs">
+	    <DependentUpon>GoalsPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="GenderPage.xaml.cs">
+	    <DependentUpon>GenderPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="AboutUsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BMIHeightPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BMIResultPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="BMIWeightPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Exercises\ArmsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Exercises\ChestPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Exercises\BackPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Exercises\GlutesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Exercises\HamstringsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Exercises\LegsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Exercises\QuadsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Exercises\ShouldersPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\BarbellCurls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\BarbellHackSquat.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\BenchPress.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\BentOverRaises.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\CableFlye.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\CableRow.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\CalvesRaisers.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\ChestSupportedLateralRaises.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\Deadlift.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\DeclinePress.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\DumbellCurls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\DumbellFlyes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\DumbellPullover.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\DumbellRomanianDeadlift.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\DumbellShrugs.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\EzBarCurls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\FacePulls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\ForearmCurls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\GobletSquat.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\HammerCurls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\HamstringCurls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\HorizontalLegPress.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\InclineBenchPress.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\InclineDumbellPress.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\LateralRaises.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\LegLunges.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\OneArmShoulderPress.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\PullUp.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\QuadExtensions.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\RomanianDeadlift.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\SeatedDumbellFlyePress.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\SeatedLegCurk.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\SeatedLegCurl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\ShoulderPress.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\Shrugs.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\SkullCrushers.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\Squats.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\StandingCableRow.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\StandingDumbelFlye.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\SumoDeadlift.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Explanation\TricepsPushDown.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="FemaleBodyParts.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="FemaleFrontPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="FemaleMusclePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="FemaleProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="FemaleSettingsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="FourthPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GenderPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="GoalsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MaleBodyParts.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MaleFrontPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MaleMusclePaGE.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Page3.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RegisterPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SettingsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TabbedPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="WorkoutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+</Project>

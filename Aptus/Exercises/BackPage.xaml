@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.Exercises.BackPage"
+             Title="BackPage"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <StackLayout>
+
+            <Label
+                Text="BACK EXERCISES"
+                FontSize="25"
+                FontFamily="Arial"
+                FontAttributes="Bold"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="0,50,0,20">
+            </Label>
+
+            <StackLayout
+                BackgroundColor="White"
+                WidthRequest="300"
+                HeightRequest="1"
+                Opacity="0.5">
+            </StackLayout>
+
+            <Frame 
+                    Margin="20,40,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="pullup.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Pull up"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall amazing back builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                            Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapPullUp"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="cablerow.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Cable row"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good back builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapCableRow"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="deadlift.png"
+                        Scale="1.3"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Deadlift"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good chest builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapDeadlift"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="dumbellpullover.png"
+                        Scale="1.1"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Dumbell pullover"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good back builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapDumbellPullover"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="dumbellshrugs.png"
+                        Scale="1.2"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Dumbell shrugs"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good back builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapDumbellShrugs"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="shrugs.png"
+                        Scale="1.3"
+                        Margin="20,0,0,0"
+                        TranslationY="0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Shrugs"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall amazing trapezius builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapShrugs"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+
+
+            <Frame 
+                    Margin="20,0,20,20"
+                    HeightRequest="100"
+                    CornerRadius="27">
+                <HorizontalStackLayout>
+                    <Image
+                        Source="standingcablerow.png"
+                        Scale="1.2"
+                        Margin="20,0,0,0"
+                        ></Image>
+                    <VerticalStackLayout>
+                        <Label
+                        Text="Standing cable row"
+                        TextColor="#364B51"
+                        FontFamily="Arial"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        VerticalOptions="Center"
+                        Padding="20,10,0,0"></Label>
+                        <Label
+                        Text="Overall good back builder "
+                        TextColor="#364B51"
+                        FontFamily="ArialRoundedMTBold"
+                        FontSize="10"
+                        Opacity="0.6"
+                        Padding="20,0,0,0"></Label>
+                    </VerticalStackLayout>
+
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapStandingCableRow"/>
+                    </HorizontalStackLayout.GestureRecognizers>
+
+                </HorizontalStackLayout>
+            </Frame>
+
+            <StackLayout.Background>
+                <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+                    <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                    <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                </LinearGradientBrush>
+            </StackLayout.Background>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Aptus.GoalsPage"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+        <StackLayout Orientation ="Horizontal" 
+                     HorizontalOptions="Start" 
+                     Margin="0,80,0,0">
+            
+            <ImageButton Margin="45" 
+                         Padding="0,0,0,2" 
+                         Source="back.png" 
+                         WidthRequest="45" 
+                         HeightRequest="30" 
+                         Clicked="OnBackButton4Clicked"></ImageButton>
+            
+            <Image Source="loading4.png" 
+                   HorizontalOptions="Center" 
+                   WidthRequest="120" 
+                   HeightRequest="120"></Image>
+        </StackLayout>
+
+        <StackLayout HorizontalOptions="Center">
+            <Label Text="GOALS" 
+                   HorizontalOptions="Center"  
+                   Margin="0,0,0,0" 
+                   FontSize="25" 
+                   FontFamily="Arial Rounded MT Bold" 
+                   FontAttributes="Bold" 
+                   TextColor="White"/>
+            <StackLayout Orientation="Vertical">
+                
+                <StackLayout>
+                    <Button x:Name="gainStrengthButton" Text="Gain Strenght" BackgroundColor="White" Background="Transparent" 
+                            BorderWidth="1" BorderColor="White" TextColor="White" FontAttributes="Bold"
+                            Margin="0,45,0,10" WidthRequest="300" HeightRequest="65" FontSize="15" Clicked="OnGainStrenghtButtonClicked"/>
+                    
+                    <Button x:Name="gainMuscleButton" Text="Gain Muscle" BackgroundColor="White" Background="Transparent" 
+                            BorderWidth="1" BorderColor="White" TextColor="White" FontAttributes="Bold"
+                            Margin="0,20,0,10" WidthRequest="300" HeightRequest="65" FontSize="15" Clicked="OnGainMuscleButtonClicked"/>
+                    
+                    <Button x:Name="loseWeightButton" Text="Lose Weight" BackgroundColor="White" Background="Transparent" 
+                            BorderWidth="1" BorderColor="White" TextColor="White" FontAttributes="Bold"
+                            Margin="0,20,0,10" WidthRequest="300" HeightRequest="65" FontSize="15" Clicked="OnLoseFatButtonClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+
+        <Button x:Name="NextButton2" 
+                Text="NEXT" 
+                Clicked="OnNextButton4Clicked"
+                HeightRequest="60" 
+                WidthRequest="295" 
+                CornerRadius="20" 
+                BackgroundColor="#364B51" 
+                TextColor="#BFC4C6"
+                Margin="0,90,0,0" 
+                FontFamily="Arial" 
+                FontAttributes="Bold" 
+                FontSize="13"/>
+
+        <StackLayout.Background>
+            <LinearGradientBrush StartPoint="0.5,0.5" EndPoint="0.5,1">
+                <GradientStop Color="#A9B3B9" Offset="0"></GradientStop>
+                <GradientStop Color="#5D6E76" Offset="1"></GradientStop>
+            </LinearGradientBrush>
+        </StackLayout.Background>
+    </StackLayout>
+</ContentPage>
